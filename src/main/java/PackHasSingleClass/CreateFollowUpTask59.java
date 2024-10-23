@@ -13,8 +13,8 @@ import org.testng.annotations.Test;
 
 public class CreateFollowUpTask59 {
 //	static ChromeDriver driver;
-	static EdgeDriver driver;
-//	static RemoteWebDriver driver;
+//	static EdgeDriver driver;
+	static RemoteWebDriver driver;
 
 	@Test
 	public void createFollowUpMethod() throws Exception {
@@ -22,8 +22,8 @@ public class CreateFollowUpTask59 {
 		dc.setBrowserName("MicrosoftEdge");
 		dc.setPlatform(Platform.LINUX);
 //		driver = new ChromeDriver();
-		driver = new EdgeDriver();
-//		driver = new RemoteWebDriver(new URL("http://20.40.48.160:4444/wd/hub"), dc);
+//		driver = new EdgeDriver();
+		driver = new RemoteWebDriver(new URL("http://20.40.48.160:4444/wd/hub"), dc);
 		driver.get("https://login.salesforce.com");
 		driver.manage().window().maximize();
 		driver.findElement(By.id("username")).sendKeys("gokul.sekar@testleaf.com");
