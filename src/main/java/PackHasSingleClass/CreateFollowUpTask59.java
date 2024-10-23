@@ -5,13 +5,15 @@ import java.net.URL;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class CreateFollowUpTask59 {
-	static ChromeDriver driver;
+//	static ChromeDriver driver;
+	static EdgeDriver driver;
 //	static RemoteWebDriver driver;
 
 	@Test
@@ -19,7 +21,8 @@ public class CreateFollowUpTask59 {
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setBrowserName("MicrosoftEdge");
 		dc.setPlatform(Platform.LINUX);
-		driver = new ChromeDriver();
+//		driver = new ChromeDriver();
+		driver = new EdgeDriver();
 //		driver = new RemoteWebDriver(new URL("http://20.40.48.160:4444/wd/hub"), dc);
 		driver.get("https://login.salesforce.com");
 		driver.manage().window().maximize();
