@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 
 public class CreateFollowUpTask59 {
 //	static ChromeDriver driver;
-
 	static RemoteWebDriver driver;
 
 	@Test
