@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class NbaPlayerExp {
-	static RemoteWebDriver driver;
+//	static RemoteWebDriver driver;
 	@Test
 	public void playerExp() throws InterruptedException, MalformedURLException {
 //		DesiredCapabilities dc = new DesiredCapabilities();
