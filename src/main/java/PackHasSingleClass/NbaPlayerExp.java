@@ -10,9 +10,11 @@ import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -30,7 +32,11 @@ public class NbaPlayerExp {
 //        dc.setPlatform(Platform.LINUX);
 //        driver = new RemoteWebDriver(new URL("http://20.40.48.160:4444/wd/hub"), dc);
 		
-		EdgeDriver driver=new EdgeDriver();
+		EdgeOptions options = new EdgeOptions();
+		options.addArguments("--headless");
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+		WebDriver driver = new EdgeDriver(options);
 		driver.manage().window().maximize();
 		driver.get(" https://www.nba.com/stats");
 		List<String> lin = new ArrayList<String>();
