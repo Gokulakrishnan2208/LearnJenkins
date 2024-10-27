@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PackHasSingleClass.CreateFollowUpTask59">
+      <class name="PackHasSingleClass.NbaPlayerExp">
         <methods>
-          <include name="close"/>
-          <include name="createFollowUpMethod"/>
+          <include name="playerExp"/>
         </methods>
-      </class> <!-- PackHasSingleClass.CreateFollowUpTask59 -->
+      </class> <!-- PackHasSingleClass.NbaPlayerExp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

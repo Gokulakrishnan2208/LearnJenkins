@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="PackHasSingleClass.CreateFollowUpTask59"/>
+      <class name="PackHasSingleClass.NbaPlayerExp"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
